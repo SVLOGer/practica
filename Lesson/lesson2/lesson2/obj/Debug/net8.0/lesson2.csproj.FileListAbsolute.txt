@@ -1,0 +1,14 @@
+D:\practica\Lesson\lesson2\lesson2\bin\Debug\net8.0\lesson2.exe
+D:\practica\Lesson\lesson2\lesson2\bin\Debug\net8.0\lesson2.deps.json
+D:\practica\Lesson\lesson2\lesson2\bin\Debug\net8.0\lesson2.runtimeconfig.json
+D:\practica\Lesson\lesson2\lesson2\bin\Debug\net8.0\lesson2.dll
+D:\practica\Lesson\lesson2\lesson2\bin\Debug\net8.0\lesson2.pdb
+D:\practica\Lesson\lesson2\lesson2\obj\Debug\net8.0\lesson2.GeneratedMSBuildEditorConfig.editorconfig
+D:\practica\Lesson\lesson2\lesson2\obj\Debug\net8.0\lesson2.AssemblyInfoInputs.cache
+D:\practica\Lesson\lesson2\lesson2\obj\Debug\net8.0\lesson2.AssemblyInfo.cs
+D:\practica\Lesson\lesson2\lesson2\obj\Debug\net8.0\lesson2.csproj.CoreCompileInputs.cache
+D:\practica\Lesson\lesson2\lesson2\obj\Debug\net8.0\lesson2.dll
+D:\practica\Lesson\lesson2\lesson2\obj\Debug\net8.0\refint\lesson2.dll
+D:\practica\Lesson\lesson2\lesson2\obj\Debug\net8.0\lesson2.pdb
+D:\practica\Lesson\lesson2\lesson2\obj\Debug\net8.0\lesson2.genruntimeconfig.cache
+D:\practica\Lesson\lesson2\lesson2\obj\Debug\net8.0\ref\lesson2.dll
