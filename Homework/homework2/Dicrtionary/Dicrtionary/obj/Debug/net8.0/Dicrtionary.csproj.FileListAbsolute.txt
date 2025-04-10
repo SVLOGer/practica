@@ -1,0 +1,15 @@
+D:\practica\Homework\homework2\Dicrtionary\Dicrtionary\bin\Debug\net8.0\Dicrtionary.exe
+D:\practica\Homework\homework2\Dicrtionary\Dicrtionary\bin\Debug\net8.0\Dicrtionary.deps.json
+D:\practica\Homework\homework2\Dicrtionary\Dicrtionary\bin\Debug\net8.0\Dicrtionary.runtimeconfig.json
+D:\practica\Homework\homework2\Dicrtionary\Dicrtionary\bin\Debug\net8.0\Dicrtionary.dll
+D:\practica\Homework\homework2\Dicrtionary\Dicrtionary\bin\Debug\net8.0\Dicrtionary.pdb
+D:\practica\Homework\homework2\Dicrtionary\Dicrtionary\obj\Debug\net8.0\Dicrtionary.GeneratedMSBuildEditorConfig.editorconfig
+D:\practica\Homework\homework2\Dicrtionary\Dicrtionary\obj\Debug\net8.0\Dicrtionary.AssemblyInfoInputs.cache
+D:\practica\Homework\homework2\Dicrtionary\Dicrtionary\obj\Debug\net8.0\Dicrtionary.AssemblyInfo.cs
+D:\practica\Homework\homework2\Dicrtionary\Dicrtionary\obj\Debug\net8.0\Dicrtionary.csproj.CoreCompileInputs.cache
+D:\practica\Homework\homework2\Dicrtionary\Dicrtionary\obj\Debug\net8.0\Dicrtionary.sourcelink.json
+D:\practica\Homework\homework2\Dicrtionary\Dicrtionary\obj\Debug\net8.0\Dicrtionary.dll
+D:\practica\Homework\homework2\Dicrtionary\Dicrtionary\obj\Debug\net8.0\refint\Dicrtionary.dll
+D:\practica\Homework\homework2\Dicrtionary\Dicrtionary\obj\Debug\net8.0\Dicrtionary.pdb
+D:\practica\Homework\homework2\Dicrtionary\Dicrtionary\obj\Debug\net8.0\Dicrtionary.genruntimeconfig.cache
+D:\practica\Homework\homework2\Dicrtionary\Dicrtionary\obj\Debug\net8.0\ref\Dicrtionary.dll
