@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>JSON Comparator App</title>
+    <link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+<header>
+    <div class="logo" id="logo">JSON Comparator</div>
+    <div id="greeting"></div>
+    <button id="authButton"></button>
+</header>
+
+<main>
+    <section id="promoPage" class="page">
+        <h1>Welcome to the JSON Comparator App</h1>
+        <p>This tool lets you compare two JSON objects and see the difference.</p>
+        <button id="startButton" style="display: none;">Start</button>
+    </section>
+
+    <section id="loginPage" class="page hidden">
+        <h2>Login</h2>
+        <input type="text" id="loginInput" placeholder="Enter your name" />
+        <div class="error" id="loginError"></div>
+        <button id="loginSubmit">Log in</button>
+    </section>
+
+    <section id="comparePage" class="page hidden">
+        <h2>Compare JSONs</h2>
+        <textarea id="oldJson" placeholder="Old JSON"></textarea>
+        <textarea id="newJson" placeholder="New JSON"></textarea>
+        <div class="error" id="compareError"></div>
+        <button id="compareButton">Compare</button>
+        <pre id="resultOutput"></pre>
+    </section>
+</main>
+
+<script type="module" src="src/app.js"></script>
+</body>
+</html>
