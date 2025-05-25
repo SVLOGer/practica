@@ -1,0 +1,10 @@
+.criterionRow {
+    display: flex;
+    align-items: center;
+}
+
+.ratingLabel {
+    margin-bottom: 0.25rem;
+    display: block;
+    color: black;
+}
