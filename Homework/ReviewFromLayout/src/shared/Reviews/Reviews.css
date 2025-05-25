@@ -1,0 +1,36 @@
+.reviewList {
+    margin-block-start: 25px;
+}
+
+.reviewItem {
+    margin-block-end: 20px;
+    padding: 10px;
+    color: black;
+}
+
+.reviewText {
+    margin-top: 5px;
+    white-space: pre-wrap;
+    color: black;
+    text-align: left;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.reviewHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviewAuthor {
+    font-size: 16px;
+    line-height: 9px;
+}
+
+.reviewRate {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 18px;
+}
