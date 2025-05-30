@@ -1,0 +1,53 @@
+.stepper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+}
+
+.stepper-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.step {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #E0E0E0;
+    border: 3px solid #CCCCCC;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.step.active {
+    border-color: #999999;
+}
+
+.step.none {
+    background-color: white;
+}
+
+.step.green {
+    background-color: green;
+}
+
+.step.orange {
+    background-color: orange;
+}
+
+.step.red {
+    background-color: red;
+}
+
+.line {
+    width: 12px;
+    height: 3px;
+    background-color: #CCCCCC;
+    position: absolute;
+    left: 22px;
+    z-index: 0;
+}
