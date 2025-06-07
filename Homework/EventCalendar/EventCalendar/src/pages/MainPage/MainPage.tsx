@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './MainPage.module.css'
-import {Cards} from "../../shared/Cards/Cards.tsx";
-import type {CardType} from "../../utils/Types/Types.ts";
+import {Cards} from '../../shared/Cards/Cards.tsx'
+import type {CardType} from '../../utils/Types/Types.ts'
 
 const cards: CardType[] = [
     {

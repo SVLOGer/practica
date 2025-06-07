@@ -3,9 +3,14 @@ type CardType = {
     id: number
 }
 
-type CardPlaceType = {
+type CardColumnType = {
     column: number,
     cardsIds: number[]
+}
+
+type CardPlaceType = {
+    columnIndex: number,
+    cardIndex: number
 }
 
 type CoordsType = {
@@ -13,4 +18,4 @@ type CoordsType = {
     y: number
 }
 
-export {CardType, CardPlaceType, CoordsType}
+export {CardType, CardPlaceType, CoordsType, CardColumnType}

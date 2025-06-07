@@ -8,8 +8,12 @@
     user-select: none;
 }
 
-.dragging {
-    cursor: grabbing;
+.shadow {
+    background: white;
+    opacity: 0.4;
+}
+
+.potential {
     background: white;
     border: 2px dashed blue;
 }
