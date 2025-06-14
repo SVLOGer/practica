@@ -1,0 +1,22 @@
+.filters {
+    display: flex;
+    gap: 10px;
+}
+
+.filterButton {
+    background: blue;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clearButton {
+    background: red;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}

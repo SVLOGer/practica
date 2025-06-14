@@ -1,0 +1,40 @@
+.currencyConverter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.currencyPicker {
+    display: flex;
+    align-items: center;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.input {
+    border: none;
+}
+
+.selector {
+    border: none;
+}
+
+.input:active,
+.input:focus {
+    outline: none;
+    border: none;
+}
+
+.selector:active,
+.selector:focus {
+    outline: none;
+    border: none;
+}
+
+.divider {
+    width: 1px;
+    height: 15px;
+    background-color: #CCCCCC;
+    margin: 0 20px;
+}
