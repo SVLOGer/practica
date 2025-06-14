@@ -1,0 +1,28 @@
+.lineContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #EEEEEE;
+}
+
+.toggleButton {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #EEEEEE;
+    padding: 4px 12px;
+    cursor: pointer;
+    z-index: 1;
+    border: none;
+    border-radius: 25px;
+}
+
+.toggleButton:hover {
+    background: #CCCCCC;
+}

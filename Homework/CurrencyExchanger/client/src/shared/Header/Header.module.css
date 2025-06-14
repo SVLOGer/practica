@@ -1,0 +1,18 @@
+.payment {
+    color: #AAAAAA;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.purchased {
+    color: black;
+    font-size: 34px;
+    line-height: 50px;
+}
+
+.time {
+    margin-block-start: 5px;
+    color: #AAAAAA;
+    font-size: 14px;
+    line-height: 20px;
+}
