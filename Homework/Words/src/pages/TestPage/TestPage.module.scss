@@ -1,0 +1,12 @@
+@import '../../utils/styles/variables';
+
+.testCard {
+  max-width: 400px;
+  margin-top: $spacing-4;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-1;
+}
