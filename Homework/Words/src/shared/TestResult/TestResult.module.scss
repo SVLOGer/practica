@@ -1,0 +1,21 @@
+@import '../../utils/styles/variables';
+
+.resultContainer {
+  text-align: center;
+  padding: $spacing-4;
+}
+
+.circularProgress {
+  color: $primary-color;
+}
+
+.resultText {
+  margin: $spacing-3 0;
+}
+
+.buttonGroup {
+  margin-top: $spacing-3;
+  display: flex;
+  justify-content: center;
+  gap: $spacing-2;
+}

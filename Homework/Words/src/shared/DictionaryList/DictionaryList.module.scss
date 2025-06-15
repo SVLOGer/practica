@@ -1,0 +1,44 @@
+@import '../../utils/styles/variables';
+
+.container {
+  overflow: hidden;
+}
+
+.header {
+  background-color: $background-color;
+}
+
+.wordList {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacing-2 $spacing-3;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.column {
+  width: 400px;
+}
+
+.wordText {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.actions {
+  display: flex;
+  gap: $spacing-1;
+}

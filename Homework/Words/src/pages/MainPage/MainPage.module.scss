@@ -1,0 +1,17 @@
+@import '../../utils/styles/variables';
+
+.container {
+  margin-inline-start: 0;
+}
+
+.content {
+  margin-block-start: $spacing-4;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-2;
+  margin-block-start: $spacing-4;
+}

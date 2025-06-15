@@ -1,0 +1,17 @@
+@import '../../utils/styles/variables';
+
+.pageContainer {
+  padding: $spacing-3;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: $spacing-2;
+  margin-bottom: $spacing-3;
+}
+
+.backButton {
+  margin-top: $spacing-2;
+}

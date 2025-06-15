@@ -1,0 +1,12 @@
+@import '../../utils/styles/variables';
+
+.dialogContent {
+  padding: $spacing-3;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: $spacing-1;
+  margin-top: $spacing-2;
+}
