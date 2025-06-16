@@ -2,14 +2,16 @@ import React, { useState, useRef, useCallback } from 'react'
 import type { CardPlaceType, CardColumnType, CoordsType } from '../../Types/Types.ts'
 
 function useDnD(initialPlaces: CardColumnType[]) {
-    const [cardsPlaces, setCardsPlaces] = useState<CardColumnType[]>(initialPlaces)
+    const [cardsPlaces, setCardsPlaces] = useState<CardColumnType[]>(() => {
+        const saved = localStorage.getItem('cardsPlaces')
+        return saved ? JSON.parse(saved) : initialPlaces
+    })
+
     const [draggedCardId, setDraggedCardId] = useState<number | null>(null)
     const draggedCardIdRef = useRef<number | null>(null)
     const [draggedStyle, setDraggedStyle] = useState<React.CSSProperties>({})
     const [insertPosition, setInsertPosition] = useState<CardPlaceType | null>(null)
     const insertPositionRef = useRef<CardPlaceType | null>(null)
-    const [startIndex, setStartIndex] = useState<number>(-1)
-    const [startColumn, setStartColumn] = useState<number>(-1)
     const dragOffset = useRef<CoordsType>({ x: 0, y: 0 })
 
     const columnRefs = useRef<(HTMLDivElement | null)[]>([])
@@ -22,8 +24,6 @@ function useDnD(initialPlaces: CardColumnType[]) {
             draggedCardIdRef.current = cardId
 
             const startIdx = cardsPlaces[columnIndex].cardsIds.findIndex((id) => id === cardId)
-            setStartIndex(startIdx)
-            setStartColumn(columnIndex)
 
             const startPos = { columnIndex: columnIndex, cardIndex: startIdx }
             setInsertPosition(startPos)
@@ -108,28 +108,24 @@ function useDnD(initialPlaces: CardColumnType[]) {
             const insertPos = insertPositionRef.current
             const draggedId = draggedCardIdRef.current
 
-            if (
-                insertPos &&
-                draggedId !== null &&
-                (startIndex !== insertPos.cardIndex || startColumn !== insertPos.columnIndex)
-            ) {
-                const newPlaces = cardsPlaces.map((place, index) => {
-                    if (index === insertPos.columnIndex) {
-                        const filteredCards = place.cardsIds.filter((id) => id !== draggedId)
-                        filteredCards.splice(insertPos.cardIndex, 0, draggedId)
-                        return {
-                            ...place,
-                            cardsIds: filteredCards,
-                        }
-                    } else {
-                        return {
-                            ...place,
-                            cardsIds: place.cardsIds.filter((id) => id !== draggedId),
-                        }
-                    }
-                })
+            if (insertPos && draggedId !== null) {
+                setCardsPlaces(prevPlaces => {
+                    const newPlaces = JSON.parse(JSON.stringify(prevPlaces))
 
-                setCardsPlaces(newPlaces)
+                    newPlaces.forEach((place: CardColumnType) => {
+                        place.cardsIds = place.cardsIds.filter(id => id !== draggedId)
+                    })
+
+                    newPlaces[insertPos.columnIndex].cardsIds.splice(
+                        insertPos.cardIndex,
+                        0,
+                        draggedId
+                    )
+
+                    localStorage.setItem('cardsPlaces', JSON.stringify(newPlaces))
+
+                    return newPlaces
+                })
             }
 
             setDraggedCardId(null)
@@ -141,7 +137,7 @@ function useDnD(initialPlaces: CardColumnType[]) {
             document.removeEventListener('mousemove', onMouseMove)
             document.removeEventListener('mouseup', onMouseUp)
         },
-        [cardsPlaces, startIndex, startColumn, onMouseMove]
+        [onMouseMove]
     )
 
     return {

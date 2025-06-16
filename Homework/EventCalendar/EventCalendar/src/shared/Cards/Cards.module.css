@@ -7,6 +7,7 @@
 
 .column {
     width: 10%;
+    height: 97vh;
     display: flex;
     flex-direction: column;
     gap: 15px;
