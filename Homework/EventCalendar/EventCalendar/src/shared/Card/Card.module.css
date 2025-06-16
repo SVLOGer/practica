@@ -1,0 +1,25 @@
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    user-select: none;
+}
+
+.shadow {
+    background: white;
+    opacity: 0.4;
+}
+
+.potential {
+    background: white;
+    border: 2px dashed blue;
+}
+
+.normal {
+    cursor: pointer;
+    background: orange;
+    border: 2px solid black;
+}
